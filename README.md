@@ -5,7 +5,7 @@ It showcases the ability to create a scalable, data-driven user interface withou
 
 🚀 Live Demo
 
-🔗 View Live Project: [Insert GitHub Pages Link Here]
+🔗 View Live Project: [ https://krishkumar2227.github.io/TechStore-E_Commerce_Website/]
 
 🛠️ Features & Technical Highlights=>
 ⚡ Dynamic Product Rendering
