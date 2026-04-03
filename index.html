@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore | Professional E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">TechStore</div>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Premium Tech Gadgets</h1>
+        <p>Find the best accessories for your setup.</p>
+        
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for gadgets..." onkeyup="filterSearch()">
+        </div>
+
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterCategory('All', event)">All</button>
+            <button class="filter-btn" onclick="filterCategory('Audio', event)">Audio</button>
+            <button class="filter-btn" onclick="filterCategory('Wearable', event)">Wearables</button>
+            <button class="filter-btn" onclick="filterCategory('Peripherals', event)">Peripherals</button>
+        </div>
+    </header>
+
+    <main id="product-grid">
+        </main>
+
+    <div id="cart-sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleCart()">×</button>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+            <strong>Total: ₹<span id="total-price">0</span></strong>
+        </div>
+        <button class="checkout-btn" onclick="alert('Order Placed Successfully!')">Checkout Now</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
